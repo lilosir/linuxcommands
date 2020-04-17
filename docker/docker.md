@@ -1,5 +1,7 @@
 `docker container ls -a` == `docker ps -a`
+
 `docker ps -aq` will group only show contianer id
+
 `docker rm $(docker container ps -aq)` 
 
 `
