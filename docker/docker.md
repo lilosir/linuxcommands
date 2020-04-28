@@ -22,3 +22,9 @@ RUN yum install -y vim
 ```docker container commit``` == ```docker commit```
 
 ```docker image build``` == ```docker build```
+
+
+```dokcer image push``` == ```docker push```
+```docker push [OPTIONS] NAME[:TAG]``` eg. ```docker push lilosir/hello-world:latest```
+
+use https://hub.docker.com/_/registry to create a private image
