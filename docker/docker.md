@@ -19,7 +19,7 @@ RUN yum install -y vim
 ===> `docker build -t [name] .`
 
 
-```docker container commit``` == ```docker commit```
+```docker container commit``` == ```docker commit``` ```docker container stop``` == ```docker stop``` 
 
 ```docker image build``` == ```docker build```
 
@@ -28,3 +28,12 @@ RUN yum install -y vim
 ```docker push [OPTIONS] NAME[:TAG]``` eg. ```docker push lilosir/hello-world:latest```
 
 use https://hub.docker.com/_/registry to create a private image
+
+
+The ```docker exec``` command runs a new command in a running container.
+
+### ```docker run```
+
+```--memory=200M``` allocate memory, at most 200M
+
+```--cpu-shares=2``` run cpu shares which is relative weight, for example, container A runns with cup-shares=2, container B runs with 4, container A will take 33% cpu while container B takes 66%
