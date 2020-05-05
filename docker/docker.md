@@ -37,3 +37,5 @@ The ```docker exec``` command runs a new command in a running container.
 ```--memory=200M``` allocate memory, at most 200M
 
 ```--cpu-shares=2``` run cpu shares which is relative weight, for example, container A runns with cup-shares=2, container B runs with 4, container A will take 33% cpu while container B takes 66%
+
+##### in linux, use ```veth``` (peer to peer pair), to connect two namespaces to communicate with each other. Same theroy, in docker, there is a ```docker0``` bridge, which can use veths to connect every containers, that is why containers can talk with each other. Also, docker0 => NAT => eth0(ip address) => internet, that is why containers can access network.
