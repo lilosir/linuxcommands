@@ -54,3 +54,6 @@ By default, if we do not set netowrk, container will run in default network, `br
 
 ### docker network host
 the container is connected to host network. if run ```ip a``` we can find the state is same as run ```ip a``` in the host linux terminal. 
+
+### docker network overlay
+this can be used in when containers are deployed on different host
